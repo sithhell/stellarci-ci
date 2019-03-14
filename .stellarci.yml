@@ -12,4 +12,3 @@ build:
      - name: Test
      - commands:
        - find %(prop:repodir)s
-       - echo done...

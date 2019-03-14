@@ -1,0 +1,9 @@
+build:
+  - name: Building...
+  - os:
+    - linux:
+      - x86_64
+  - step:
+    - name: Build
+    - commands:
+      - ls %(prop:repodir)

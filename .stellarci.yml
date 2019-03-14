@@ -6,5 +6,5 @@ build:
   - step:
     - name: Build
     - commands:
-      - ls %(prop:repodir)s
+      - ls -lah %(prop:repodir)s
       - echo "Hello World"

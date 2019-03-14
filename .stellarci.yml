@@ -7,3 +7,4 @@ build:
     - name: Build
     - commands:
       - ls %(prop:repodir)
+      - echo "Hello World"

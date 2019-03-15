@@ -3,9 +3,9 @@ build:
   - os:
     - linux:
       - x86_64
-  -variables:
+  - variables:
     - BLUBB:
-        - yay
+        yay
   - step:
     - name: Build
     - commands:

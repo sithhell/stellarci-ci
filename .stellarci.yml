@@ -11,4 +11,5 @@ build:
   - step:
      - name: Test
      - commands:
+       - exit 1
        - find %(prop:repodir)s

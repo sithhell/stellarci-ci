@@ -11,6 +11,7 @@ build:
     - commands:
       - ls -lah %(prop:repodir)s
       - echo "Hello World"
+      - echo ${BLUBB}
   - step:
      - name: Test
      - commands:

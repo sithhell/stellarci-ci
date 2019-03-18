@@ -6,6 +6,8 @@ build:
   - compiler:
     - gcc:
       - 8.3.0
+    - clang:
+      - 7.0.1
   - step:
     - name: Build
     - commands:

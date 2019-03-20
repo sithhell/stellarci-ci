@@ -2,7 +2,7 @@ build:
   - name: Building...
   - os:
     - linux:
-      - x86_64
+      - aarch64
   - compiler:
     - gcc:
       - 8.3.0

@@ -9,7 +9,7 @@ build:
       - ls -lah %(prop:repodir)s
       - echo "Hello World"
   - step:
-     - name: Test more
+     - name: Test
      - commands:
        - find %(prop:repodir)s
        - exit 1

@@ -6,10 +6,12 @@ build:
   - compiler:
     - gcc:
       - 8.3.0
+  - boost:
+    - 1.70.0
   - step:
     - name: Build
     - commands:
-      - spack list
+      - spack find
       - gcc --version
   - step:
      - name: Test

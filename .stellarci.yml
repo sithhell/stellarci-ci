@@ -6,8 +6,6 @@ build:
   - compiler:
     - gcc:
       - 8.3.0
-    - llvm:
-      - 7.0.1
   - step:
     - name: Build
     - commands:

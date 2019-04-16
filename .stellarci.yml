@@ -3,11 +3,15 @@ build:
   - os:
     - linux:
       - x86_64
+  - variables:
+    - BLUBB:
+        yay
   - step:
     - name: Build
     - commands:
       - ls -lah %(prop:repodir)s
       - echo "Hello World"
+      - echo ${BLUBB}
   - step:
      - name: Test
      - commands:

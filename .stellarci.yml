@@ -2,13 +2,24 @@ build:
   - name: Building...
   - os:
     - linux:
-      - x86_64
+      - aarch64
+  - compiler:
+    - gcc:
+      - 8.3.0
+  - cmake:
+    - 3.12.0
+  - boost:
+    - 1.7.0
+  - step:
+    - name: CMake
+    - commands:
+      - cmake --version
+      - cmake %(prop:repodir)s
   - step:
     - name: Build
     - commands:
-      - ls -lah %(prop:repodir)s
-      - echo "Hello World"
+      - make
   - step:
      - name: Test
      - commands:
-       - find %(prop:repodir)s
+       - ctest

@@ -19,4 +19,7 @@ build:
   - step:
      - name: Test
      - commands:
-       - find %(prop:repodir)s
+       - echo %(prop:repodir)s
+       - pwd
+       - cd %(prop:repodir)s
+       - pwd

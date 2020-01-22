@@ -2,13 +2,25 @@ build:
   - name: Building...
   - os:
     - linux:
-      - x86_64
+      - aarch64
+  - compiler:
+    - gcc:
+      - 8.3.0
+  - boost:
+    - 1.70.0
   - step:
     - name: Build
     - commands:
-      - ls -lah %(prop:repodir)s
-      - echo "Hello World"
+      - spack find
+      - $CC --version
+      - echo $BOOST_ROOT
+      - echo $Boost_ROOT
+      - echo $boost_ROOT
+      
   - step:
      - name: Test
      - commands:
-       - find %(prop:repodir)s
+       - echo %(prop:repodir)s
+       - pwd
+       - cd %(prop:repodir)s
+       - pwd
